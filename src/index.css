@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-hero-slant {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .clip-hero-slant-sm {
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .clip-hero-top {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .clip-banner-slant {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  }
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F4EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #0A192F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #11253E;
+}
